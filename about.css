@@ -1,0 +1,32 @@
+h2 {
+  color: rgb(59, 59, 59);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.my_inf {
+  align-items: center;
+  margin: 0 auto;
+  width: 80%;
+  line-height: 1.7;
+  color: rgb(59, 59, 59);
+}
+
+.my_call_parent {
+  text-align: center;
+}
+
+#my_call {
+  display: inline-block;
+  color: #fff9f9;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #c085c4;
+  border: 2px solid #fff9f9;
+  font-weight: 500;
+}/*# sourceMappingURL=about.css.map */

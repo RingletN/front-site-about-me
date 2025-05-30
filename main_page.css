@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 50px;
+  margin: 0 auto;
+}
+
+.text_container {
+  text-align: center;
+}
+
+.photo_container {
+  background-color: #c085c4;
+  padding: 10px;
+  border-radius: 5%;
+}
+
+img {
+  border-radius: 10%;
+}
+
+h2 {
+  color: rgb(59, 59, 59);
+}
+
+p {
+  font-size: 17px;
+  padding-bottom: 10px;
+}/*# sourceMappingURL=main_page.css.map */

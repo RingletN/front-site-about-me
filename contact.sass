@@ -1,0 +1,162 @@
+$main-gray: rgb(59, 59, 59)
+$main-purple: #c085c4
+$light-gray: #fff9f9
+$error-red: #ff0000
+
+h2
+  color: $main-gray
+  margin-bottom: 50px
+
+.container
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  position: relative
+
+form
+  padding: 0 60px
+
+.photo
+  text-align: center
+
+img
+  border-radius: 20%
+
+#contact-form
+  input[type="radio"]
+    margin-right: 5px
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+    width: 16px
+    height: 16px
+    border-radius: 50%
+    cursor: pointer
+    border: 1px solid $main-gray
+    background-color: $light-gray
+
+    &:checked
+      background-color: $main-purple
+      border-color: $main-gray
+
+.calendar
+  display: none
+  position: absolute
+  border: 1px solid $light-gray
+  background: white
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1)
+  padding: 10px
+  z-index: 100
+  
+
+  #days
+    display: grid
+    grid-template-columns: repeat(7, 1fr)
+    gap: 5px
+    color: white
+    
+    //ЦИКЛ + МАТЕМАТИКА
+    // нагенерим стили для ячеек календаря с помощью цикла
+    @for $i from 1 through 7*5
+      .day:nth-child(#{$i})
+        //измененим цвета фона в зависимости от ячейки
+        background-color: lighten(purple, $i + 1)
+
+    .day 
+        width: 40px
+        height: 40px
+        line-height: 40px
+        text-align: center
+        cursor: pointer
+
+        &[data-active="true"]
+            &:hover
+                background-color: rgb(0, 255, 51)  !important
+
+
+        &[data-active="false"]
+            background-color: transparent
+            cursor: default
+
+            &:hover 
+                background-color: transparent
+
+  .calendar-header
+    display: flex
+    justify-content: space-between
+    margin-bottom: 10px
+
+  .weekdays
+    display: flex
+    justify-content: space-between
+    margin-bottom: 5px
+
+  .weekdays div
+    text-align: center
+    width: 40px
+    font-weight: bold
+
+p
+  color: $main-gray
+  margin-bottom: 7px
+
+.error
+  border: 2px solid $error-red !important
+
+.ok
+  border: 2px solid rgb(0, 255, 51) !important
+
+.disabled-button
+  background-color: #ccc
+  opacity: 0.5
+  pointer-events: none
+
+.tooltip
+  position: absolute
+  background-color: #333
+  color: white
+  padding: 5px 10px
+  border-radius: 5px
+  display: none
+  z-index: 10
+  right: 0
+  top: 50%
+  transform: translateY(-50%)
+  max-width: 250px
+  white-space: pre-wrap
+
+.input-container
+  position: relative
+  display: inline-block
+  width: 315px
+  padding: 0 315px
+
+.modal
+  display: none
+  position: fixed
+  z-index: 1
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  overflow: auto
+  background-color: rgba(0, 0, 0, 0.4)
+  &.show
+    display: block
+
+.modal-content
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -80%)
+  background-color: $light-gray
+  padding: 20px
+  border: 1px solid $main-purple
+  border-radius: 30px
+  text-align: center
+  max-width: 80%
+  box-sizing: border-box
+
+.modal-content button
+  margin: 10px

@@ -1,0 +1,178 @@
+$purple: #c085c4
+$light-gray: #f9f9f9
+$gray: rgb(59, 59, 59)
+$dark-gray: rgb(92, 92, 92)
+%flex: 
+  display: flex
+.buttonsame
+  text-decoration: none
+  font-weight: 500
+  font-size: 17px
+  color: $light-gray
+  padding: 10px 20px
+  border-radius: 20px
+  background-color: $purple
+  border: 2px solid $light-gray
+  transition: all 0.3s ease
+  cursor: pointer
+
+
+body
+  font-family: "Montserrat", sans-serif
+  font-optical-sizing: auto
+  font-weight: 400
+  font-style: normal
+  padding: 0
+  margin: 0
+  margin-bottom: 50px
+
+h1
+  padding: 10px 20px
+
+h2
+  margin-left: 40px
+
+.nav-item > a
+  @extend .buttonsame
+
+#button,
+#submit_button,
+#reset_button,
+#yes_button,
+#no_button
+  @extend .buttonsame
+
+  &:hover
+    background-color: $light-gray
+    border-color: $purple
+    color: $purple
+
+.dropdown-content.show
+  display: block
+
+.dropdown
+  @extend %flex
+  align-items: center
+  flex-direction: column
+
+.dropdown-content
+  font-size: 15px
+  display: none
+  position: absolute
+  background-color: $light-gray
+  border-radius: 20px
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2)
+  z-index: 1
+  padding: 2px
+  margin: 3px
+
+.dropdown-content li
+  padding: 2px 10px
+
+.dropdown-content a
+  border-radius: 0px
+  background-color: transparent
+  border: none
+  color: $purple
+
+.dropdown-content a:hover
+  color: #573559 !important
+
+nav
+  @extend %flex
+  flex-wrap: wrap
+  justify-content: center
+  margin: 0 auto
+  padding: 10px
+
+.nav-item
+  margin: 4px
+  flex: 0 0 auto
+
+header
+  padding: 20px 0px 4px
+  background-color: $light-gray
+
+.nav-item i
+  margin-right: 10px
+
+a
+  text-decoration: none
+  font-weight: 500
+
+li
+  list-style-type: none
+
+
+.nav-item.active a
+  background-color: $light-gray
+  border-color: $purple
+  color: $purple
+
+.nav-item.active i
+  color: $purple
+
+.page-and-date
+  @extend %flex
+  justify-content: space-between
+  align-items: center
+  padding-right: 20px
+  color: $purple
+
+#currentDateTime
+  font-size: 24px
+  text-align: right
+  font-weight: 550
+
+main
+  margin-top: 50px
+
+input[type="text"], input[type="email"], input[type="tel"], textarea, select
+  width: 100%
+  max-width: 315px
+  padding: 10px
+  margin-bottom: 15px
+  border: 1px solid $purple
+  background-color: $light-gray
+  border-radius: 3px
+  box-sizing: border-box
+  font-family: "Montserrat", sans-serif
+  font-size: 16px
+  color: $dark-gray
+
+#test-form input[type="checkbox"]
+  vertical-align: middle
+
+table
+  width: 80%
+  margin: 0 auto
+  border-collapse: collapse
+  margin-bottom: 40px
+
+th, td
+  text-align: center
+  border: 1px solid $gray
+  font-size: 17px
+  padding: 10px
+
+th
+  background-color: $purple
+  color: $light-gray
+  font-size: 20px
+
+tr:hover
+  background-color: rgb(155, 155, 155)
+  color: white
+
+caption
+  margin-bottom: 17px
+  font-weight: 500
+
+.sessions-container
+  @extend %flex
+  justify-content: center
+
+.sessions-container table
+  flex: 1
+  margin: 0 20px
+  max-width: 400px

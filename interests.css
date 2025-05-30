@@ -1,0 +1,57 @@
+h2 {
+  background-color: #fff9f9;
+  margin: 30px 0 20px 0;
+  color: #c085c4;
+  font-weight: 750;
+}
+
+.text-block {
+  width: 30%;
+  margin: 0 40px;
+}
+
+.image-block {
+  width: 21%;
+  margin: 0 40px;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main li {
+  color: rgb(46, 46, 46);
+  margin-bottom: 10px;
+}
+
+main ul {
+  list-style-type: circle;
+  padding-bottom: 20px;
+}
+
+.slogan_parent {
+  text-align: center;
+}
+
+#slogan {
+  display: inline-block;
+  color: #fff9f9;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #c085c4;
+  border: 2px solid #fff9f9;
+}
+
+p {
+  line-height: 1.7;
+  text-align: center;
+  color: rgb(59, 59, 59);
+}/*# sourceMappingURL=interests.css.map */

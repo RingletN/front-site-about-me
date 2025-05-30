@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Персональный сайт Сафиуллиной Анастасии. Тест</title>
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="nav.css">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="test_form.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>            
+            <div class="nav-item"  data-page="main_page.html">
+                <a href="main_page.html" data-icon="fi fi-rr-home" data-active-icon="fi fi-rr-home-filled">  
+                    <i class="fi fi-rr-home"></i> Главная  
+                </a> 
+            </div>
+            <div class="nav-item" data-page="about.html">
+                <a href="about.html" data-icon="fi fi-rs-user" data-active-icon="fi fi-rs-user-filled">  
+                    <i class="fi fi-rs-user"></i> Обо мне 
+                </a> 
+            </div>
+            <div class="dropdown">
+            <div class="nav-item" data-page="interests.html">
+                <a href="interests.html" data-icon="fi fi-rr-star" data-active-icon="fi fi-rr-star-filled">  
+                    <i class="fi fi-rr-star"></i> Мои интересы 
+                </a> 
+                <ul class="dropdown-content">
+                    <li><a href="#hobby">Мои хобби</a></li>
+                    <li><a href="#movies">Мои любимые фильмы</a></li>
+                    <li><a href="#music">Моя любимая музыка</a></li>
+                </ul>
+            </div> 
+        </div>
+                      <div class="nav-item" data-page="study.html">
+                <a href="study.html" data-icon="fi fi-rr-graduation-cap" data-active-icon="fi fi-rr-graduation-cap-filled">  
+                    <i class="fi fi-rr-graduation-cap"></i> Учеба 
+                </a> 
+            </div>
+            <div class="nav-item" data-page="photoalbum.html">
+                <a href="photoalbum.html" data-icon="fi fi-rr-camera" data-active-icon="fi fi-rr-camera-filled">  
+                    <i class="fi fi-rr-camera"></i> Фотоальбом 
+                </a> 
+            </div>
+            <div class="nav-item" data-page="contact.html">
+                <a href="contact.html" data-icon="fi fi-rr-comment-alt" data-active-icon="fi fi-rr-comment-alt-filled">  
+                    <i class="fi fi-rr-comment-alt"></i> Контакт 
+                </a> 
+            </div>
+            <div class="nav-item" data-page="test.html">
+                <a href="test.html" data-icon="fi fi-rr-search-alt" data-active-icon="fi fi-rr-search-alt-filled">  
+                    <i class="fi fi-rr-search-alt"></i> Тест 
+                </a> 
+            </div>
+            <div class="nav-item" data-page="history.html">
+                <a href="history.html" data-icon="fi fi-rr-clock" data-active-icon="fi fi-rr-clock-filled">  
+                    <i class="fi fi-rr-clock"></i> История просмотра 
+                </a> 
+            </div>
+            <script src="menu.js"></script>
+        </nav>
+        <div class="page-and-date">
+            <h1>Тест</h1>
+            <div id="currentDateTime"></div>
+            <script src="dateTime.js"></script>
+        </div>
+            
+           </header>
+    <main>
+
+
+        <h2>Тест по Основам дискретной математики</h2>
+        <div class="container">
+            <form id="test-form">
+                <div class="input-container">
+                <label for="fio">Фамилия Имя Отчество:</label><br>
+                <input type="text" id="fio" name="fio" autocomplete="off">  </div><br><br>
+          
+                <label for="group">Группа:</label><br>
+                <select id="group" name="group" autocomplete="off">
+                    <optgroup label="1 курс">
+                        <option value="ИТ/б-24-1-о">ИТ/б-24-1-о</option>
+                        <option value="ИТ/б-24-2-о">ИТ/б-24-2-о</option>
+                        <option value="ИТ/б-24-3-о">ИТ/б-24-3-о</option>
+                        <option value="ИТ/б-24-4-о">ИТ/б-24-4-о</option>
+                        <option value="ИТ/б-24-5-о">ИТ/б-24-5-о</option>
+                        <option value="ИТ/б-24-6-о">ИТ/б-24-6-о</option>
+                        <option value="ИТ/б-24-7-о">ИТ/б-24-7-о</option>
+                        <option value="ИТ/б-24-8-о">ИТ/б-24-8-о</option>
+                    </optgroup>
+                    <optgroup label="2 курс">
+                        <option value="ИТ/б-23-1-о">ИТ/б-23-1-о</option>
+                        <option value="ИТ/б-23-2-о">ИТ/б-23-2-о</option>
+                        <option value="ИТ/б-23-3-о">ИТ/б-23-3-о</option>
+                        <option value="ИТ/б-23-4-о">ИТ/б-23-4-о</option>
+                        <option value="ИТ/б-23-5-о">ИТ/б-23-5-о</option>
+                        <option value="ИТ/б-23-6-о">ИТ/б-23-6-о</option>
+                        <option value="ИТ/б-23-7-о">ИТ/б-23-7-о</option>
+                        <option value="ИТ/б-23-8-о">ИТ/б-23-8-о</option>
+                    </optgroup>
+                    <optgroup label="3 курс">
+                        <option value="ИС/б-22-1-о">ИС/б-22-1-о</option>
+                        <option value="ИС/б-22-2-о">ИС/б-22-2-о</option>
+                        <option value="ПИ/б-22-1-о">ПИ/б-22-1-о</option>
+                        <option value="ПИ/б-22-2-о">ПИ/б-22-2-о</option>
+                    </optgroup>
+                </select><br><br>
+
+                <h3>Вопросы:</h3>
+
+                
+                <h4>1. Какое из следующих утверждений верно для булевых операций?</h4>
+                <input type="checkbox" id="q1-a" name="q1" value="a">
+                <label for="q1-a">Конъюнкция ложна, если хотя бы один операнд истинен.</label><br>
+                <input type="checkbox" id="q1-b" name="q1" value="b">
+                <label for="q1-b">Дизъюнкция истинна, если оба операнда ложны.</label><br>
+                <input type="checkbox" id="q1-c" name="q1" value="c">
+                <label for="q1-c">Инверсия истинна, если операнд истинен.</label><br><br>
+
+                <hr>
+                <h4>2. Выберите тип отношения, который устанавливает соответствие между элементами множеств A и B, при
+                    котором каждому элементу из A соответствует один и только один элемент из B:</h4>
+                <select id="q2" name="q2" autocomplete="off">
+                    <optgroup label="Отображения">
+                        <option value="q2-a">Вектор</option>
+                        <option value="q2-b">Функия</option>
+                        <option value="q2-c">Преобразование</option>
+                    </optgroup>
+                    <optgroup label="Отношения">
+                        <option value="q2-d">Транзитивное</option>
+                        <option value="q2-e">Симметричное</option>
+                        <option value="q2-f">Рефлексивное</option>
+                        <option value="q2-g">Антисимметричное</option>
+                    </optgroup>
+                </select><br><br>
+                <hr>
+                <h4>3. Найти | A ⋃ B |, если А = {1,5,6}, В = {7,5,2}?</h4>
+                <div class="input-container">
+                <input type="text" id="q3" name="q3" autocomplete="off"> </div><br><br>
+           
+
+                <br><br> 
+                <!-- <div class="error-message" style="display: none;"></div>  -->
+
+                <input type="submit" id="submit_button" value="Отправить">
+                <input type="reset" id="reset_button" value="Очистить форму">
+
+            </form>
+        </div>
+        <script src="add_session.js"></script>
+    </main>
+
+</body>
+
+</html>

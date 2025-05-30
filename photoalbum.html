@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Персональный сайт Сафиуллиной Анастасии. Фотоальбом</title>
+    <link rel="stylesheet" href="photoalbum.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> </head>
+<body>
+    <header>
+        <div class="page-and-date">
+            <h1><i class="fi fi-rr-camera"></i>  Фотоальбом</h1>
+            <div id="currentDateTime"></div>
+            <script src="dateTime.js"></script> </div>
+    </header>
+
+    <main>
+        <h2>Здесь Вы можете посмотреть мои фотографии в разные моменты жизни!</h2>
+        <div class="photoalb">
+            <div class="photo_grid">
+                <script>
+
+                    $(document).ready(function() {
+                        const fotos = ["glamour.jpg", "friends1.jpg", "before_sleep.jpg", "shodka.jpg", "3cats.jpg", "kotostrophe.jpg", "cafe.jpg", "cosplay.jpg",
+                            "identity.jpg", "sleep.jpg", "friends2.jpg", "work.jpg", "beauty.jpg", "kents.jpg", "book.jpg"];
+                        const titles = ["Гламур", "С друзяшками", "Перед сном", "Сходка", "Три кота - шесть ушей", "Котострофа", "Уютное каафеее", "Первый косплей",
+                            "Настоящая сущность", "Завтра к первой паре", "Друзяшкины", "Собрался в институт", "Красота - страшная сила!", "Личная охрана", "Отдых в кроватке"];
+
+                        for (let i = 0; i < fotos.length; i++) {
+                            let figure = $("<figure class='photo'></figure>");
+                            let img = $("<img>").attr({
+                                src: "pictures/" + fotos[i],
+                                alt: titles[i],
+                                title: titles[i]
+                            });
+                            let figcaption = $("<figcaption>" + titles[i] + "</figcaption>");
+                            figure.append(img, figcaption);
+                            $(".photo_grid").append(figure);
+                        }
+                    });
+                </script>
+            </div>
+
+                <div id="big_photo_box" class="big_photo_box">
+                    <span class="close-button">&times;</span>
+                    <img id="big_photo" src="">
+                    <p id="image-counter"></p> </div>
+            </div>
+
+        </div>
+        <div class="back_to_main">
+            <a href="main_page.html" id="button">Вернуться на главную</a>
+        </div>
+
+        <script src="big_photo.js"></script>  
+        <script src="add_session.js"></script>
+    </main>
+</body>
+</html>

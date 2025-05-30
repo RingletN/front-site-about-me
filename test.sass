@@ -1,0 +1,112 @@
+$main-gray: rgb(59, 59, 59)
+$main-purple: #c085c4
+$error-red: #ff0000
+$success-green: rgb(0, 255, 51)
+
+h2
+  color: $main-gray
+  margin-bottom: 50px
+
+h3, h4
+  color: $main-gray
+
+h3
+  color: $main-purple
+  padding: 10px
+  border-radius: 20px
+  background-color: #ffffff
+  border: 2px solid $main-purple
+  font-weight: 500
+
+#test-form
+  input[type="checkbox"]
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+    width: 16px
+    height: 16px
+    border-radius: 3px
+    cursor: pointer
+    border: 1px solid $main-purple
+    background-color: #fff9f9
+
+    &:checked
+      background-color: $main-purple
+      border-color: $main-gray
+      margin-right: 10px
+
+    &.error
+      border: 1px solid $error-red
+
+
+.container
+  width: 80%
+  margin: 0 auto
+
+#submit_button, #reset_button
+  margin-bottom: 40px
+
+p
+  color: $main-gray
+  margin-bottom: 7px
+
+.error
+  border: 2px solid $error-red !important
+
+.ok
+  border: 2px solid $success-green !important
+
+.disabled-button
+  background-color: #ccc
+  opacity: 0.5
+  pointer-events: none
+
+.tooltip
+  position: absolute
+  background-color: #333
+  color: white
+  padding: 5px 10px
+  border-radius: 5px
+  display: none
+  z-index: 10
+  right: 0
+  top: 50%
+  transform: translateY(-50%)
+  max-width: 250px
+  white-space: pre-wrap
+
+.input-container
+  position: relative
+  display: inline-block
+  width: 315px
+  padding-right: 300px
+
+.modal
+  display: none
+  position: fixed
+  z-index: 1
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  overflow: auto
+  background-color: rgba(0, 0, 0, 0.4)
+  &.show
+    display: block
+
+.modal-content
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -80%)
+  background-color: #fff9f9
+  padding: 20px
+  border: 1px solid $main-purple
+  border-radius: 30px
+  text-align: center
+  max-width: 80%
+  box-sizing: border-box
+
+.modal-content
+  button
+    margin: 10px
